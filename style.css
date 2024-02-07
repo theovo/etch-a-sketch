@@ -1,0 +1,38 @@
+/* ALTERNATIVE BOX MODEL */
+
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    height: 100vh;
+}
+
+#divSquares {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    flex: 0 0 auto;
+    height: 960px;
+    width: 960px;
+
+    border: 1px solid black;
+}
